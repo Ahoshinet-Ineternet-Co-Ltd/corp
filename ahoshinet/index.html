@@ -1,75 +1,137 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahoshinet Internet Co., Ltd.</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ahoshinet Groups</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="navbar.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Exo:wght@600&display=swap" rel="stylesheet">
 
-    <meta property="og:site_name" content="Ahoshinet Internet Co., Ltd." />
-    <meta property="og:title" content="Ahoshinet Internet: Go Internet Next Stage.">
-    <meta property="og:description" content="アホシネット通信株式会社は、最先端のインターネットサービスを提供する企業です。お客様に高速で安定した通信環境を提供し、未来の通信インフラを支えることを目指しています。">
-    <meta property="og:url" content="https://corp.daruks.com/ahoshinet/">
-    <meta property="og:image" content="https://corp.daruks.com/ahoshinet/img/og_img.jpg">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-    <meta property="og:type" content="website">
-</head>
-<body>
-    <div class="navbar">
-        <div class="company-name">
-            <span id="left-slash">/</span>
-            <span id="text-container">Ahoshinet Internet Co., Ltd.</span>
-            <span id="right-slash">/</span>
-        </div>
-        <div class="menu" id="menuButton" onclick="toggleMenu()">
-            <div class="menu-text">Menu</div>
-            <div class="menu-icon">
-                <div></div>
-                <div></div>
+        <meta property="og:site_name" content="Ahoshinet Groups" />
+        <meta property="og:title" content="Ahoshinet Groups: 安全性。快適性。信頼性。" />
+        <meta property="og:description" content="Ahoshinet Groupsは、次世代のインフラを提供する企業です。私たちのビジョンは、テクノロジーの力で社会課題を解決し、持続可能な未来の創造に貢献することです。" />
+        <meta property="og:url" content="https://corp.daruks.com/ahoshinet/">
+        <meta property="og:type" content="website">
+
+        <style>
+            body { font-family: 'Noto Sans JP', sans-serif; }
+            h1, h2 { font-family: 'Exo', sans-serif; }
+        </style>
+    </head>
+
+    <body class="bg-gray-50 text-gray-800">
+
+        <!-- nav -->
+        <nav class="flex justify-between items-center p-6 bg-white shadow-md fixed top-0 w-full z-50">
+            <div class="text-2xl font-bold text-blue-600">Ahoshinet Groups</div>
+            <div class="space-x-6 hidden md:flex items-center">
+                <a id="navAbout" href="#" class="hover:text-blue-600">About</a>
+                <a id="navBusinesses" href="#" class="hover:text-blue-600">Businesses</a>
+                <a id="navContact" href="#" class="hover:text-blue-600">Contact</a>
+                <div class="flex space-x-2 ml-4">
+                    <button id="jaBtn" class="lang-btn text-gray-500 hover:text-blue-600 px-2 pb-1 border-b-2 border-transparent focus:outline-none">JA</button>
+                    <button id="enBtn" class="lang-btn text-gray-500 hover:text-blue-600 px-2 pb-1 border-b-2 border-transparent focus:outline-none">EN</button>
+                </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="side-menu" id="sideMenu">
-        <div class="menu-content">
-            <br>
-            <h1><a href="https://corp.daruks.com/ahoshinet/">Home</a></h1>
-            <ul>
-                <li><a href="https://corp.daruks.com/ahoshinet/about/">About</a></li>
-                <li><a href="https://corp.daruks.com/ahoshinet/news">News</a></li>
-                <li><a href="https://corp.daruks.com/ahoshinet/contact/">Contact</a></li>
-            </ul>
-            <div class="footer">
-                © 2024 darui3018823,  Ahoshinet Internet Co., Ltd.<br>
-                All rights reserved.
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        function toggleMenu() {
-            const sideMenu = document.getElementById('sideMenu');
-            const menuButton = document.getElementById('menuButton');
-            sideMenu.classList.toggle('active');
-            
-            if (sideMenu.classList.contains('active')) {
-                menuButton.querySelector('.menu-text').textContent = 'Close';
-                menuButton.classList.add('close-active'); // Closeボタンに変化
-            } else {
-                menuButton.querySelector('.menu-text').textContent = 'Menu';
-                menuButton.classList.remove('close-active'); // 元に戻す
-            }
-        }
-    </script>
-    <script src="scripts.js"></script>
+        </nav>
 
-</body>
+        <!-- main -->
+        <section class="flex flex-col justify-center items-center text-center h-screen bg-gradient-to-r from-blue-500 to-teal-400 text-white px-4">
+            <h1 id="main_title" class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">Connecting the Future with Ahoshinet Groups</h1>
+            <p id="sub_title" class="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="300">Innovative Technologies for Next-Generation Infrastructure.</p>
+            <a id="heroButton" href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition" data-aos="zoom-in" data-aos-delay="600">Learn More</a>
+        </section>
+
+        <!-- business -->
+        <section class="py-32 bg-gray-100">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Our Businesses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
+                    <h3 id="business1" class="text-xl font-semibold mb-4">Internet Services</h3>
+                    <p id="business1_desc">Providing ultra-high-speed, low-latency next-generation network infrastructure.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <h3 id="business2" class="text-xl font-semibold mb-4">Cloud Solutions</h3>
+                    <p id="business2_desc">Building secure and highly scalable cloud environments tailored to your needs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="400">
+                    <h3 id="business3" class="text-xl font-semibold mb-4">Security Services</h3>
+                    <p id="business3_desc">Comprehensive security measures to protect your valuable information.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ceo message-->
+        <section class="py-32 bg-white text-center">
+            <h2 id="ceo_title" class="text-3xl font-bold mb-8" data-aos="fade-up">CEO Message</h2>
+                <p id="ceo_msg" class="max-w-2xl mx-auto text-lg text-gray-600" data-aos="fade-up" data-aos-delay="200">
+                    "At Ahoshinet Groups, we believe in creating a connected world where technology empowers lives.<br>
+                    Together, we strive towards a sustainable and innovative future."
+                </p>
+            <p class="mt-8 font-semibold text-gray-800" data-aos="fade-up" data-aos-delay="400">- nOwAy oMg, CEO</p>
+        </section>
+
+        <!-- company overview -->
+        <section class="py-32 bg-gray-100">
+            <h2 id="company_ovv" class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Company Overview</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left text-gray-700 px-6">
+                <div data-aos="fade-right">
+                    <h3 id="founded" class="text-xl font-semibold mb-2">Founded</h3>
+                    <p id="f_date">April 1, 2020</p>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 id="location" class="text-xl font-semibold mb-2">Location</h3>
+                    <p id="location_head">Tokyo, Japan (Headquarters)</p>
+                </div>
+                <div data-aos="fade-right">
+                    <h3 id="emplo" class="text-xl font-semibold mb-2">Employees</h3>
+                    <p id="emplo_int">Approximately 300</p>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 id="main_business" class="text-xl font-semibold mb-2">Main Business</h3>
+                    <p id="main_business_detail">Internet Services, Cloud Solutions, Cybersecurity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- vision -->
+        <section class="text-center mt-16 mb-16">
+            <h2 id="title_ourvision" class="text-3xl font-bold mb-8" data-aos="fade-up" data-aos-delay="200">Our Vision</h2>
+            <p id="ourvision" class="max-w-2xl mx-auto text-lg text-gray-600" data-aos="fade-up" data-aos-delay="400">
+                Ahoshinet Groups is a collective of teams committed to driving technological innovation and advancing global connectivity.<br>
+                We bring the future of the internet to our customers with security, speed, and unwavering reliability.
+            </p>
+        </section>
+
+        <!-- join our team -->
+        <section class="py-32 bg-white text-center mt-8">
+            <h2 id="title_jointeam" class="text-3xl font-bold mb-8" data-aos="fade-up">Join Our Team</h2>
+            <p id="desc_jointeam" class="max-w-2xl mx-auto text-lg text-gray-600" data-aos="fade-up" data-aos-delay="200">
+                We are always looking for talented individuals passionate about shaping the future of technology.<br>
+                Join us to create the next generation of digital infrastructure together.
+            </p>
+            <a id="explore_careers" href="#" class="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-700 transition" data-aos="fade-up" data-aos-delay="400">
+                Explore Careers
+            </a>
+        </section>
+
+
+        <footer class="text-center p-6 bg-gray-200 text-gray-600 mt-32">
+            © 2024 - 2025 darui3018823 All rights reserved. <br>
+            © 2024 - 2025 Ahoshinet Groups. All rights reserved. 
+        </footer>
+
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: false,
+            });
+        </script>
+        <script src="language-switch.js"></script>
+
+    </body>
 </html>
