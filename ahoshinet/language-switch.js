@@ -60,6 +60,13 @@ function setLanguage(lang) {
                 en: 'We are always looking for talented individuals passionate about shaping the future of technology. Join us to create the next generation of digital infrastructure together.'
         },
         { selector: '#explore_careers', ja: '採用情報', en: 'Explore Careers' },
+
+        // disclaimer
+        { selector: '#disclaimer', ja: '免責事項', en: 'Disclaimer' },
+        { selector: '#disclaimer_txt', 
+                ja: '「Ahoshinet Internet Co., Ltd.」は完全に架空の組織です。「Ahoshinet Groups」は概念として存在しますが、実在の組織を表すものではありません。',
+                en: 'The entities "Ahoshinet Internet Co., Ltd." and "Ahoshinet Logistics" are entirely fictional. While "Ahoshinet Groups" and "Ahoshinet Team" exist as concepts, they do not represent real-world organizations.'
+        },
     ];
     
     elementsToUpdate.forEach(item => {
