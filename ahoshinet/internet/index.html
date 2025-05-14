@@ -1,106 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahoshinet Internet</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ahoshinet Internet</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Exo:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Exo:wght@600&display=swap" rel="stylesheet">
 
-    <style>
-        body { font-family: 'Noto Sans JP', sans-serif; }
-        h1, h2, h3 { font-family: 'Exo', sans-serif; }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
+        <style>
+            body { font-family: 'Noto Sans JP', sans-serif; }
+            h1, h2, h3 { font-family: 'Exo', sans-serif; }
+        </style>
+    </head>
+    
+    <body class="bg-gray-50 text-gray-800">
 
-<!-- Navbar -->
-<nav class="flex justify-between items-center p-6 bg-white shadow-md fixed top-0 w-full z-50">
-    <div class="text-2xl font-bold text-blue-600">Ahoshinet Internet</div>
-    <div class="space-x-6 hidden md:flex items-center">
-        <a href="#" class="hover:text-blue-600">Plans</a>
-        <a href="#" class="hover:text-blue-600">Technology</a>
-        <a href="#" class="hover:text-blue-600">FAQ</a>
-        <a href="#" class="hover:text-blue-600">Contact</a>
-    </div>
-</nav>
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center p-6 bg-white shadow-md fixed top-0 w-full z-50">
+            <div class="text-2xl font-bold text-blue-600">Ahoshinet Internet</div>
+            <div class="space-x-6 hidden md:flex items-center">
+                <a href="#" class="hover:text-blue-600">Plans</a>
+                <a href="#" class="hover:text-blue-600">Technology</a>
+                <a href="#" class="hover:text-blue-600">FAQ</a>
+                <a href="#" class="hover:text-blue-600">Contact</a>
+            </div>
+        </nav>
 
-<!-- Hero Section -->
-<section class="flex flex-col justify-center items-center text-center h-screen bg-gradient-to-r from-blue-500 to-teal-400 text-white px-4">
-    <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">次世代のインターネット、今ここに。</h1>
-    <p class="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="300">最高のスピード、究極の安定性で、新しいオンライン体験を。</p>
-    <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition" data-aos="zoom-in" data-aos-delay="600">プランを見る</a>
-</section>
+        <!-- Hero Section -->
+        <section class="flex flex-col justify-center items-center text-center h-screen bg-gradient-to-r from-blue-500 to-teal-400 text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">次世代のインターネット、今ここに。</h1>
+            <p class="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="300">最高のスピード、究極の安定性で、新しいオンライン体験を。</p>
+            <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition" data-aos="zoom-in" data-aos-delay="600">プランを見る</a>
+        </section>
 
-<!-- Plans Section -->
-<section class="py-32 bg-gray-100">
-    <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">プラン紹介</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20">
-        <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-right">
-            <h3 class="text-2xl font-semibold mb-4 text-blue-600">Standard</h3>
-            <p class="mb-4">最大1Gbps / 月額 ¥4,980</p>
-            <ul class="text-gray-600 mb-6">
-                <li>✔ 一般家庭向け</li>
-                <li>✔ IPv6対応</li>
-                <li>✔ 24時間サポート</li>
-            </ul>
-            <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition">申し込む</a>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="text-2xl font-semibold mb-4 text-blue-600">Pro</h3>
-            <p class="mb-4">最大5Gbps / 月額 ¥8,980</p>
-            <ul class="text-gray-600 mb-6">
-                <li>✔ リモートワーク向け</li>
-                <li>✔ 専用回線優先</li>
-                <li>✔ IPv6 + 固定IPオプション</li>
-            </ul>
-            <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition">申し込む</a>
-        </div>
-        <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="400">
-            <h3 class="text-2xl font-semibold mb-4 text-blue-600">Ultra</h3>
-            <p class="mb-4">最大10Gbps / 月額 ¥14,980</p>
-            <ul class="text-gray-600 mb-6">
-                <li>✔ 法人・ゲーミング向け</li>
-                <li>✔ 専用バックボーン接続</li>
-                <li>✔ プレミアムサポート</li>
-            </ul>
-            <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition">申し込む</a>
-        </div>
-    </div>
-</section>
+        <!-- Plans Section -->
+        <section class="py-32 bg-gray-100">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">プラン紹介</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20">
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Standard</h3>
+                    <p class="mb-4">最大1Gbps / 月額 ¥4,980</p>
+                    <ul class="text-gray-600 mb-6">
+                        <li>✔ 一般家庭向け</li>
+                        <li>✔ IPv6対応</li>
+                        <li>✔ 24時間サポート</li>
+                    </ul>
+                    <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition">申し込む</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Pro</h3>
+                    <p class="mb-4">最大5Gbps / 月額 ¥8,980</p>
+                    <ul class="text-gray-600 mb-6">
+                        <li>✔ リモートワーク向け</li>
+                        <li>✔ 専用回線優先</li>
+                        <li>✔ IPv6 + 固定IPオプション</li>
+                    </ul>
+                    <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition">申し込む</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="400">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">Ultra</h3>
+                    <p class="mb-4">最大10Gbps / 月額 ¥14,980</p>
+                    <ul class="text-gray-600 mb-6">
+                        <li>✔ 法人・ゲーミング向け</li>
+                        <li>✔ 専用バックボーン接続</li>
+                        <li>✔ プレミアムサポート</li>
+                    </ul>
+                    <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition">申し込む</a>
+                </div>
+            </div>
+        </section>
 
-<!-- Technology Section -->
-<section class="py-32 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">最新技術のご紹介</h2>
-    <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="200">
-        Ahoshinet Internetは最新の光ファイバー技術と強力なバックボーンネットワークで、超低遅延かつ安定した通信環境をご提供します。
-        IPv6完全対応、AIトラフィック最適化により常に快適なインターネット環境を実現しています。
-    </p>
-</section>
+        <!-- Technology Section -->
+        <section class="py-32 bg-white text-center">
+            <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">最新技術のご紹介</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="200">
+                Ahoshinet Internetは最新の光ファイバー技術と強力なバックボーンネットワークで、超低遅延かつ安定した通信環境をご提供します。
+                IPv6完全対応、AIトラフィック最適化により常に快適なインターネット環境を実現しています。
+            </p>
+        </section>
 
-<!-- CTA Section -->
-<section class="py-32 bg-gradient-to-r from-blue-500 to-teal-400 text-white text-center">
-    <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">今すぐ、次世代のインターネット体験を。</h2>
-    <a href="#" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition" data-aos="zoom-in" data-aos-delay="300">
-        お申し込みはこちら
-    </a>
-</section>
+        <!-- CTA Section -->
+        <section class="py-32 bg-gradient-to-r from-blue-500 to-teal-400 text-white text-center">
+            <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">今すぐ、次世代のインターネット体験を。</h2>
+            <a href="#" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition" data-aos="zoom-in" data-aos-delay="300">
+                お申し込みはこちら
+            </a>
+        </section>
 
-<!-- Footer -->
-<footer class="text-center p-6 bg-gray-200 text-gray-600 mt-32">
-    © 2024 Ahoshinet Internet. All rights reserved.
-</footer>
+        <!-- Footer -->
+        <footer class="text-center p-6 bg-gray-200 text-gray-600 mt-32">
+            © 2024 Ahoshinet Internet. All rights reserved.
+        </footer>
 
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-    });
-</script>
-
-</body>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: false,
+            });
+        </script>
+        <script src="language-switch.js"></script>
+    </body>
 </html>
